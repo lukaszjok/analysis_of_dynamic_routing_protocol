@@ -1,0 +1,207 @@
+\documentclass[conference,compsoc]{IEEEtran}
+
+% *** CITATION PACKAGES ***
+%
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+\else
+\fi
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{amssymb} %mathematical packages to write correct' formulas
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\title{Comparative analysis of dynamic routing protocol in data center}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{
+\IEEEauthorblockN{Lukasz Joksch}
+\IEEEauthorblockA{Department of Electronics,\\Wroclaw University of Science and Technology\\Wroclaw, Poland\\
+E-mail: 200963@student.pwr.edu.pl}
+\and
+\IEEEauthorblockN{Tomasz Kowalik}
+\IEEEauthorblockA{Department of Electronics,\\Wroclaw University of Science and Technology\\Wroclaw, Poland\\
+E-mail: 200943@student.pwr.edu.pl}
+
+}
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page (and note that there is less available width in this regard for
+% compsoc conferences compared to traditional conferences), use this
+% alternative format:
+% 
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3}, 
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+During the last few decades all kind of computer networks has rapidly grown. It is noticeable espacially in big companies, which have their own data centres. They require  special solutions, diffrent in diffrent data centres. This solutions have to cope the most difficult requirements. It is very important to choose wisely diffrent kinds of mechanism used in networks in example proper dynamic routing protocol. It is hard to say which one will be optimal in diffrent cases. In this paper, we will investigate which popular dynamic routing protocol is the best in given cases. We also compare them with latest trend in networks – Software-Defined Networking.
+\end{abstract}
+
+\section{Introduction}
+
+Computer networks is one of the fastest growing area of technology in these days. At the begining, they were used usually to communicate between people or to share a files. Nowadays modern networks brings much more functions: printer sharings, video conferencing, streaming video and music, entertainment and more. Large data centres use lots of applications and technologies which make work easier and more efficient. Therefore modern network must be fast and efficient too.
+\\
+In past networks were diffrent. For example it was necessary to have equipment made by the same vendor. Otherwise computers, printers or something else cannot communicate with each other. This problem was solved introducing the Open Systems Interconnection (OSI) reference model by the International Organization for Standardization (ISO). The OSI model was meant to help vendors create interoperable network devices and software in the form of protocols so that networks from different vendors could work with each other.
+\\
+Actually, the most popular network layer protocol for connecting computer networks is Internet Protocol (IP). Network layer is responsible mostly for finding the best way from one host from one subnet to another host in another subnet. It is very difficult, especially in large networks. However, there are dynamic routing protocols, which do it automatically. Nowadays, the most widely used intra domain routing protocols are Open Shortest Path First (OSPF), Enhanced Interior Gateway Routing Protocol (EIGRP), Intermediate System to Intermediate System (IS-IS) and Rounting Information Protocol (RIP). Lately, Software-Defined Networking were introduced. It is new solution for networks and it is said it will be future of networking. It is new kind of technology.
+\\
+This article shows real time and simulation comparative between dynamic routing protocols such as OSPF, EIGRP, IS-IS, RIP and new solution – SDN. Realistic survey were made using Cisco routers and the simulations were carried out by using the GNS3 simulator.
+
+\section{Related words}
+
+Works [1-5 and 7-11] testing the routing protocols using diffrent simulators, like: OPNET, GNS3, NT-3 and Cisco. In their studies, authors of works [1-5 and 7-11], create variuos senarios to compare performance of protocols such as EIGRP, OSPF, RIP, IS-IS. They usually survey convergence duration, traffic sent, link utilization, throughput and bandwidth. E. Shewandagn Lemma, S. A. Hussain, W. W. Anjelo, S. Farhangi, A. Rostami, S. Golmohammadi, as in [1-2], also were testing combination of various dynamic routing protocols. Articles [16-20] present solutions used in Software-Defined Networking. Authors shows thier own algorithms, combinations of existing technology or compare existing technology with well known dynamic routing protocols such as OSPF.
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+
+
+% use section* for acknowledgment
+\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+  \section*{Acknowledgments}
+\else
+  % regular IEEE prefers the singular form
+  \section*{Acknowledgment}
+\fi
+
+---------------------------------
+
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka} 
+E. Shewandagn Lemma, S. A. Hussain, W. W. Anjelo, „Performance Comparison of EIGRP/ IS-IS and OSPF/ IS-IS”, Master Thesis Electrical Engineering, Blekinge Tekniska Hogskolan, 2009;
+\bibitem{IEEEhowto:kopka}
+S. Farhangi, A. Rostami, S. Golmohammadi, „Performance Comparison of Mixed Protocols Based on EIGRP, IS-IS and OSPF for Real-time Applications”, Middle-East Journal of Scientific Research 12 (11): 1502-1508, 2012;
+\bibitem{IEEEhowto:kopka}
+S. G. Thorenoor, „Dynamic Routing Protocol implementation decision between EIGRP, OSPF and RIP based on Technical Background Using OPNET Modeler”, Second International Conference on Computer and Network Technology, IEEE, 2010;
+\bibitem{IEEEhowto:kopka}
+S. G. Thorenoor, „Communication Service Provider’s choice between OSPF and IS-IS Dynamic Routing Protocols and implementation criteria Using OPNET Simulator”, Second International Conference on Computer and Network Technology, IEEE, 2010;
+\bibitem{IEEEhowto:kopka}
+C. Wijaya, „Performance Analysis of Dynamic Routing Protocol EIGRP and OSPF in IPv4 and IPv6 Network”, First International Conference on Informatics and Computational Intelligence, 2011;
+\bibitem{IEEEhowto:kopka}
+G. P. Sai Kalyan, D.Venkata Vara Prasad, „Optimal Selection of Dynamic Routing Protocol with Real Time Case Studies”, IEEE, 2012;
+\bibitem{IEEEhowto:kopka}
+I. Fiţigău, G. Toderean, „Network Performance Evaluation for RIP, OSPF and EIGRP Routing Protocols”, IEEE 2013;
+\bibitem{IEEEhowto:kopka}
+C. K. Jha1, P. D. Parihar, P. Kumar, L. Garg, „Realisation of Link State Routing Protocol and Advance Distance Vector in Different IP Schema”, Sixth International Conference on Computational Intelligence and Communication Networks, 2014;
+\bibitem{IEEEhowto:kopka}
+L. D. Circiumarescu, G. Predusca, N. Angelescu, D. Puchianu, „Comparativ Analysis of Protocol RIP, OSPF, RIGRP and IGRP for Service Video Conferencing, E-mail, FTP, HTTP”, 20th International Conference on Control Systems and Science, 2015;
+\bibitem{IEEEhowto:kopka}
+M. Jayakumar, R. S. Rekha, B.Bharathi, „A Comparative study on RIP and OSPF protocols, Analysis of RIP and OSPF protocols using GNS-3”, 2nd International Conference on Innovations in Information Embedded and Communication Systems ICIIECS’15, 2015;
+\bibitem{IEEEhowto:kopka}
+G. K. Dey, M. Ahmed, K. T. Ahmmed, „Performance Analysis and Redistribution among RIPv2, EIGRP \& OSPF Routing Protocol”, 1st International Conference on Computer \& Information Engineering, 2015;
+\bibitem{IEEEhowto:kopka}
+N. Poprzen, N. Gospić, „Scaling and Convergence speed of EIGRPv4 and OSPFv2 Dynamic Routing Protocols in Hub and Spoke Network”, Telsiks, 2009;
+\bibitem{IEEEhowto:kopka}
+M. Caria, A. Jukan, M. Hoffmann, „SDN Partitioning: A Centralized Control Plane for Distributed Routing Protocols”, IEEE Transaction on Network and Service Management, vol. 13, no. 3, 2016;
+\bibitem{IEEEhowto:kopka}
+A. Sarikhani, M. Mahramian, H. Hoseini, „Calculation of Cisco Router Processing Power for a Large Network with Thousands of Nodes”, 2nd International Conference on Signal Processing Systems (ICSPS), 2010;
+\bibitem{IEEEhowto:kopka}
+Z. Jing, „Centralized Routing and Distributed Routing Protocol For Dynamic Routing”, World Automation Congress, 2012;
+\bibitem{IEEEhowto:kopka}
+E. Aubryy, T. Silverstonz, I. Chrisment, „SRSC: SDN-based Routing Scheme for CCN”, IEEE 2015;
+\bibitem{IEEEhowto:kopka}
+H. Zhang, J. Yan, „Performance of SDN Routing in Comparison with Legacy Routing Protocols”, International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery, 2015;
+\bibitem{IEEEhowto:kopka}
+S. Tomovic, N. Lekic, I. Radusinovic, G. Gardasevic, „A new approach to dynamic routing in SDN networks”, 18th Mediterranean Electrotechnical Conference, 2016;
+\bibitem{IEEEhowto:kopka}
+M. Huangy, W. Liangy, Z. Xuy, W. Xuzy, S. Guo, Y. Xu, „Dynamic Routing for Network Throughput Maximization in Software-Defined Networks”, The 35th Annual IEEE International Conference on Computer Communications, 2016;
+\bibitem{IEEEhowto:kopka}
+S. N. Hertiana, Hendrawan, A. Kurniawan, „Performance Analysis of Flow-Based Routing in Software-Defined Networking”, The 22nd Asia-Pacific Conference on Communications, 2016;
+
+
+\end{thebibliography}
+
+
+
+
+% that's all folks
+\end{document}
+
+
