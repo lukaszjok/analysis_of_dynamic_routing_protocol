@@ -25,6 +25,8 @@
 \usepackage{float}
 
 \begin{document}
+\setlength{\parindent}{15pt}
+
 
 \title{Comparative analysis of dynamic routing protocol in data center}
 
@@ -85,19 +87,55 @@ E-mail: 200943@student.pwr.edu.pl}
 During the last few decades all kind of computer networks has rapidly grown. It is noticeable espacially in big companies, which have their own data centres. They require  special solutions, diffrent in diffrent data centres. This solutions have to cope the most difficult requirements. It is very important to choose wisely diffrent kinds of mechanism used in networks in example proper dynamic routing protocol. It is hard to say which one will be optimal in diffrent cases. In this paper, we will investigate which popular dynamic routing protocol is the best in given cases. We also compare them with latest trend in networks – Software-Defined Networking.
 \end{abstract}
 
+
+
 \section{Introduction}
 
-Computer networks is one of the fastest growing area of technology in these days. At the begining, they were used usually to communicate between people or to share a files. Nowadays modern networks brings much more functions: printer sharings, video conferencing, streaming video and music, entertainment and more. Large data centres use lots of applications and technologies which make work easier and more efficient. Therefore modern network must be fast and efficient too.
-\\
-In past networks were diffrent. For example it was necessary to have equipment made by the same vendor. Otherwise computers, printers or something else cannot communicate with each other. This problem was solved introducing the Open Systems Interconnection (OSI) reference model by the International Organization for Standardization (ISO). The OSI model was meant to help vendors create interoperable network devices and software in the form of protocols so that networks from different vendors could work with each other.
-\\
-Actually, the most popular network layer protocol for connecting computer networks is Internet Protocol (IP). Network layer is responsible mostly for finding the best way from one host from one subnet to another host in another subnet. It is very difficult, especially in large networks. However, there are dynamic routing protocols, which do it automatically. Nowadays, the most widely used intra domain routing protocols are Open Shortest Path First (OSPF), Enhanced Interior Gateway Routing Protocol (EIGRP), Intermediate System to Intermediate System (IS-IS) and Rounting Information Protocol (RIP). Lately, Software-Defined Networking were introduced. It is new solution for networks and it is said it will be future of networking. It is new kind of technology.
-\\
-This article shows real time and simulation comparative between dynamic routing protocols such as OSPF, EIGRP, IS-IS, RIP and new solution – SDN. Realistic survey were made using Cisco routers and the simulations were carried out by using the GNS3 simulator.
+I.	INTRODUCTION
+Computer networks is one of the fastest growing area of technology in these days. At the beginning, they were used usually to communicate between people or to share a files. Nowadays modern networks brings much more functions: printer sharing, video conferencing, streaming video and music, entertainment and more. Large data centers use lots of applications and technologies which make work easier and more efficient. Therefore modern network must be fast and efficient too.
+\\ \indent In past networks were different. For example it was necessary to have equipment made by the same vendor. Otherwise computers, printers or something else cannot communicate with each other. This problem was solved introducing the Open Systems Interconnection (OSI) reference model by the International Organization for Standardization (ISO). The OSI model was meant to help vendors create interoperable network devices and software in the form of protocols so that networks from different vendors could work with each other.
+\\ \indent Actually, the most popular network layer protocol for connecting computer networks is Internet Protocol (IP). Network layer is responsible mostly for finding the best way from one host from one subnet to another host in another subnet. It is very difficult, especially in large networks. However, there are dynamic routing protocols, which do it automatically. Nowadays, the most widely used intra domain routing protocols are Open Shortest Path First (OSPF) [23], Enhanced Interior Gateway Routing Protocol (EIGRP) [22], Intermediate System to Intermediate System (IS-IS) [23] and Routing Information Protocol (RIP) [21]. Lately, Software-Defined Networking were introduced. It is new solution for networks and it is said it will be future of networking. It is new kind of technology.
+\\ \indent This article shows real time and simulation comparative between dynamic routing protocols such as OSPF, EIGRP, IS-IS, RIP and new solution – Software-Defined Networking (SDN) [16-20, 25]. Realistic survey were made using Cisco routers and the simulations were carried out by using the GNS3 simulator.
 
-\section{Related words}
 
-Works [1-5 and 7-11] testing the routing protocols using diffrent simulators, like: OPNET, GNS3, NT-3 and Cisco. In their studies, authors of works [1-5 and 7-11], create variuos senarios to compare performance of protocols such as EIGRP, OSPF, RIP, IS-IS. They usually survey convergence duration, traffic sent, link utilization, throughput and bandwidth. E. Shewandagn Lemma, S. A. Hussain, W. W. Anjelo, S. Farhangi, A. Rostami, S. Golmohammadi, as in [1-2], also were testing combination of various dynamic routing protocols. Articles [16-20] present solutions used in Software-Defined Networking. Authors shows thier own algorithms, combinations of existing technology or compare existing technology with well known dynamic routing protocols such as OSPF.
+\section{Related works}
+
+Works [1-5 and 7-11] testing the routing protocols using different simulators, like: OPNET, GNS3, NT-3 and Cisco. In their studies, authors of works [1-5 and 7-11], create various scenarios to compare performance of protocols such as EIGRP, OSPF, RIP, IS-IS. They usually survey convergence duration, traffic sent, link utilization, throughput and bandwidth. E. Shewandagn Lemma, S. A. Hussain, W. W. Anjelo, S. Farhangi, A. Rostami, S. Golmohammadi, as in [1-2], also were testing combination of various dynamic routing protocols. Articles [16-20] present solutions used in Software-Defined Networking. Authors shows their own algorithms, combinations of existing technology or compare existing technology with well-known dynamic routing protocols such as OSPF.
+
+\section{Dynamic routing protocols}
+\begin{itemize}
+\item 
+General information\\\\
+In IP networks, the main task of a routing protocol is to carry packets forwarded from one node to another. In a network, routing can be defined as transmitting information from a source to a destination by hopping one-hop or multi hop. Routing protocols should provide at least two facilities: selecting routes for different pairs of source/destination nodes and, successfully transmitting data to a given destination.
+\\ The main objective of routing protocols is to determine the best path from a source to a destination. A routing algorithm uses different metrics based on a single or on several properties of the path in order to determine the best way to reach a given network. Conventional routing protocols used in interior gateway networks are classified as Link State Routing Protocols and Distance Vector Routing Protocols.
+
+\item
+Routing Information Protocol\\\
+Distance vector routing algorithm assumes that each router maintains a table (e.g., a vector) that preserves the best known distance to each destination and the line to be followed to get there.
+\\ A distance vector protocol maintains and transmits tables routing in which are listed all known networks and the distances to each of them.
+\\ Distance vector routing algorithm is also known by other names such as distributed routing algorithm Bellman-Ford or Ford-Fulkerson algorithm; named researchers have proposed (Bellman, 1957 Ford and Fulkerson, 1962). When a router to update its routing table, it sends all the essential information from adjacent routers routing table. When it receives a distance vector, checks for changes from the previous distance vector received from the same neighboring router, in which case the result is positive, it will restore the routing table, packets transmitting distance vectors to neighboring routers.
+\\ This protocol sends broadcast its routing table every 30 seconds. A packet can contain up to 25 destinations, and the unit measure uses hop count (number of jumps), maximum is 15 routers.
+
+\item 
+Open Shortest Path First\\\\
+Link state routing protocols do not change each routing tables, the information provided refers to the state of routers directly connected networks. Routing based on state bonds is widely used in current networks, protocol OSPF (Open Shortest Path First) is used increasingly over the Internet, using an algorithm based on state bonds. Each router discovers that its direct neighbors and communicate this information to other routers, using special packages carrying state links (link state packet). These packets are transmitted by the selective flooding and taken to destination routers update their own data base, the synchronization being performed at intervals of 30 minutes, the LSP packets. Each router maintains a database on which the graph of the network will develop its own routing table. Routers running this protocol accumulates information linkages on the state calculates the shortest path to a given network algorithm is known as Dijsktra algorithm. Each node is labeled with the distance from the source node to it, the over the best way known initially not knowing is no way, all nodes will be labeled with infinity. Initially, all tags are temporary, but when it is discovered that a label is the shortest possible path from the source to that node, it changes its status to become permanent.
+
+\item 
+Enhanced Interior Gateway Routing Protocol\\\\
+EIGRP, considered a hybrid routing protocol, is a class of protocols of "distance vector" and was issued in 1992, was an improvement protocol IGRP, both Cisco proprietary and can only operate on Cisco routers. EIGRP can learn in a dynamic way on the routers directly connected to a network, this is similar to the protocol "Hello" used to discover OSPF neighbors on a network. A network equipment EIGRP packets change "hello" to ensure that each neighbor is operational. As in the case of OSPF, the frequency of the exchange of packets based on the type of network where high bandwidth links exchange is carried out at intervals of 5 seconds, and in the case of connections requiring low bandwidth, the packets are exchanged every 60 seconds. EIGRP does not rely on periodic updates to converge in the topology, instead building a table that will contain announcements on neighbors about changes in topology; data is not removed as in distance vector protocols. Topology table information is processed to determine the best path to each destination network, EIGRP implementing an algorithm known as the diffusion update algorithm (DUAL).
+
+\item 
+Intermediate System to Intermediate System\\\\
+IS-IS is designed to provide intra domain routing or routing within an area. IS-IS network includes end systems, intermediate system, areas and domains. In IS-IS network, routers are intermediate systems organized into local groups known as areas. Several area are grouped together to form domains. User devices are End systems. 
+\\ IS-IS and OSPF are link state routing protocols that can be used for larger networks. IS-IS uses Dijkstra algorithm to determine the shortest path and utilizes a link state database to route packets between intermediate systems. IS-IS usually use two level hierarchical routing in which a level 1 router can identify the topology in the area including every router and host. However, a level 1 router cannot know the identity of routers outside their area. Level 1 routers of are similar to OSPF intra area routers since it has no connections outside. Level 2 routers are not required to identify the topology within level 1 area but there is a possibility that a level 2 router can be a level 1 router in a single area. 
+\\ Level 2 of IS-IS is similar to OSPF Area 0 that comprises the backbone Area in order to connect different areas.
+\\
+\end{itemize}
+
+\section{Software-Defined Networking}
+In traditional networks, the control plane and the data plane are tightly integrated and embedded in the same networking devices. The control plane is responsible for making decisions on how a specific packet should be handled, while the data plane is responsible for the actual forwarding of data through the device. The new concept introduced by SDN is the decoupling of these two planes in the network. SDN network devices perform only data forwarding, while forwarding decisions are made based on set of rules determined by an external controller. 
+\\ \indent OpenFlow enables the flow-based routing decisions. OpenFlow switches differentiate and process traffic flows according to instructions received from the controller. A flow could be broadly defined as a sequence of packets with a similar characteristics. To define a flow, the controller can use any subset of 9 L2-L4 packet header fields, along with the identifier of the interface to which the packet had arrived. This option of highly-granular control enables implementation of dynamic multipath routing, which could significantly increase the network capacity.
+\\ \indent Controller's instructions are stored inside OpenFlow devices in the form of the flow table rules. When a packet arrives, the lookup process starts to search for the corresponding rule in the table. If the packet does not match any rule, it is discarded. However, the common case is to install a low-priority rule which instructs the switch to send the packet to the controller. SDN controller then defines the next steps of processing, according to the running network management application.
 
 
 
@@ -194,6 +232,17 @@ S. Tomovic, N. Lekic, I. Radusinovic, G. Gardasevic, „A new approach to dynami
 M. Huangy, W. Liangy, Z. Xuy, W. Xuzy, S. Guo, Y. Xu, „Dynamic Routing for Network Throughput Maximization in Software-Defined Networks”, The 35th Annual IEEE International Conference on Computer Communications, 2016;
 \bibitem{IEEEhowto:kopka}
 S. N. Hertiana, Hendrawan, A. Kurniawan, „Performance Analysis of Flow-Based Routing in Software-Defined Networking”, The 22nd Asia-Pacific Conference on Communications, 2016;
+\bibitem{IEEEhowto:kopka}
+G. Malkin, „Request for Comments: 2453, RIP Version 2”, November 1998;
+\bibitem{IEEEhowto:kopka}
+D. Savage, S. Moore, D. Slice, P. Paluch, R. White, „Request for Comments: 7868, Cisco’s Enhanced Interior Gateway Routing Protocol (EIGRP)”, May 2016;
+\bibitem{IEEEhowto:kopka}
+J. Moy, „Request for Comments: 2328, OSPF Version 2”, April 1998;
+\bibitem{IEEEhowto:kopka}
+D. Oran, „Request for Comments: 1142, OSI IS-IS Intra-domain Routing Protocol”, February 1990;
+\bibitem{IEEEhowto:kopka}
+E. Haleplidis, K. Pentikousis, S. Denazis, J. Hadi Salim, D. Meyer, O. Koufopavlou, „Request for Comments: 7426, Software-Defined Networking (SDN): Layers and Architecture Terminology”, January 2015;
+
 
 
 \end{thebibliography}
