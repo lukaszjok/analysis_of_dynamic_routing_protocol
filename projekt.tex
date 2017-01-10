@@ -88,6 +88,7 @@ During the last few decades all kind of computer networks has rapidly grown. It 
 \end{abstract}
 
 
+\textbf{\\ Keywords - Dynamic routing protocols, EIGRP, OSPF, IS-IS, RIP, SDN}
 
 \section{Introduction}
 
@@ -130,15 +131,78 @@ IS-IS is designed to provide intra domain routing or routing within an area. IS-
 \\ IS-IS and OSPF are link state routing protocols that can be used for larger networks. IS-IS uses Dijkstra algorithm to determine the shortest path and utilizes a link state database to route packets between intermediate systems. IS-IS usually use two level hierarchical routing in which a level 1 router can identify the topology in the area including every router and host. However, a level 1 router cannot know the identity of routers outside their area. Level 1 routers of are similar to OSPF intra area routers since it has no connections outside. Level 2 routers are not required to identify the topology within level 1 area but there is a possibility that a level 2 router can be a level 1 router in a single area. 
 \\ Level 2 of IS-IS is similar to OSPF Area 0 that comprises the backbone Area in order to connect different areas.
 \\
+
 \end{itemize}
 
-\section{Software-Defined Networking}
-In traditional networks, the control plane and the data plane are tightly integrated and embedded in the same networking devices. The control plane is responsible for making decisions on how a specific packet should be handled, while the data plane is responsible for the actual forwarding of data through the device. The new concept introduced by SDN is the decoupling of these two planes in the network. SDN network devices perform only data forwarding, while forwarding decisions are made based on set of rules determined by an external controller. 
-\\ \indent OpenFlow enables the flow-based routing decisions. OpenFlow switches differentiate and process traffic flows according to instructions received from the controller. A flow could be broadly defined as a sequence of packets with a similar characteristics. To define a flow, the controller can use any subset of 9 L2-L4 packet header fields, along with the identifier of the interface to which the packet had arrived. This option of highly-granular control enables implementation of dynamic multipath routing, which could significantly increase the network capacity.
-\\ \indent Controller's instructions are stored inside OpenFlow devices in the form of the flow table rules. When a packet arrives, the lookup process starts to search for the corresponding rule in the table. If the packet does not match any rule, it is discarded. However, the common case is to install a low-priority rule which instructs the switch to send the packet to the controller. SDN controller then defines the next steps of processing, according to the running network management application.
+\section{RESEARCH}
+Our research was divided into few steps. First of all we have to made two topologies. Because we made research that could be implement in data center we had to prepare topologies that ensure redundancy, as links as well nodes. 
+\\ \indent One of them – smaller – to test on real physical hardware. In this case we use 15 Cisco 2801 routers. All this routers have 2 Fast Ethernet ports and 2 Serial ports. We use all of this ports to connect devices with each other.
+
+\begin{figure*}[p!]
+  \centering
+ \includegraphics[width=\textwidth] {images/f1.png}
+  \caption{Smaller topology with Cisco 2801 routers}
+\end{figure*}
+
+Second topology – bigger one – was made to do research in GNS3 – network simulator/emulator. This time we were using 30 Cisco 7200 routers with IOS 15. This equipment contains only Fast Ethernet ports. We use 4 of this ports, as in the previous case.
 
 
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{images/f2.png}
+  \caption{Bigger topology with Cisco 7200 routers}
+\end{figure*}
 
+We also prepared configurations for each router separately. Configurations were different in each topology because for example we were using different types of routers or ports. For each topology were prepared 4 different configurations – everyone for other protocol – RIP, IS-IS, OSPF and EIGRP.
+We also connect PCs to routers. In Figure 1 PC1 was connected to R1 and PC2 to R13. In Figure 2 PC1 was again connected to R1 and PC2, this time was connected to R18.
+In our research we also were using Wireshark. It is the world’s foremost and widely-used network protocol analyzer. It lets us to see what’s happening on our networks at a microscopic level and is the de facto standard across many commercial and non-profit enterprises, government agencies, and educational institutions.
+Then we started to ping PC2 from PC1. Then we simulated failure of single link 10 times and also 10 times we simulate failure of single node. This crash test was made for each dynamic routing protocols and for two topologies. Each time we were measuring times of convergence. Every time we also checked which route protocols choose.
+
+\section{ANALYSIS}
+
+After our research we averaged the results and made 4 comparison:
+\begin{itemize}
+\item Time of convergence of single link failure for smaller topology;
+\item Time of convergence of single node failure for smaller topology;
+\item Time of convergence of single link failure for bigger topology;
+\item Time of convergence of single node failure for bigger topology;
+
+\end{itemize}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/f3.png}
+  \caption{Time of convergence of single link failure for smaller topology}
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/f4.png}
+  \caption{Time of convergence of single node failure for smaller topology}
+\end{figure*}
+
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/f5.png}
+  \caption{Time of convergence of single link failure for bigger }
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{images/f6.png}
+  \caption{Time of convergence of single node failure for bigger topology}
+\end{figure*}
+
+\indent As we can see on Figure 3 for smaller topology the slowest dynamic routing protocol in the case of damage of single link is the RIP. It is more than 1,5 times slower than the fastest routing protocol – IS-IS. More than one second slower than IS-IS protocol is EIGRP.
+\\ \indent Figure 4 shows us that, again, the fastest dynamic routing protocol is IS-IS. A bit slower are EIGRP and OSPF. Almost 20 times slower in this juxtaposition is RIP.
+\\ \indent For bigger topology we made two another charts (Figure 5 and Figure 6). Time of convergence of single link failure for bigger topology, shows on Figure 5, is the best for IS-IS as well as for smaller topology. Again a bit slower was EIGRP. About 4 times slower was OSPF and RIP was almost 16 times slower than the fastest dynamic routing protocol.
+\\ \indent Figure 6 shows us that again the slowest protocol is RIP and the fastest this time is EIGRP. Faster in previous cases IS-IS, this time is almost 2 times slower than EIGRP. Dynamic routing protocol, as always, is on the third position.
+
+\section{CONCLUSION}
+After research and analysis of results we can say that the best dynamic routing protocol, for both topologies that we prepared is IS-IS. It was finding new route, after failure of link or node in the fastest time. 
+\\ \indent The worst dynamic protocols in our analysis was RIP. We definitely dissuade using this protocol.
+\\ \indent Open Shortest Path First protocol was always on the third place in our analysis. We think that it could be much more faster when we implement two of its really good features: multiarea and fast hello packets. The first one would divide topology in to smaller networks. Due to that each router could has smaller routing table and made less calculations about the best route. Fast hello packets could improve time of convergence, because routers faster would know about failure of link or node.
 
 % For peer review papers, you can put extra information on the cover
 % page as needed:
@@ -158,12 +222,12 @@ In traditional networks, the control plane and the data plane are tightly integr
 \ifCLASSOPTIONcompsoc
   % The Computer Society usually uses the plural form
   \section*{Acknowledgments}
+We would thank to Wojciech Kmiecik and Tomasz Kucofaj without whom our real hardware researches could not be done. We also need to thank Wojciech Mituś, Piotr Jędrzejak and Ryszard Juchta who always have good advises, which helped us to made our researches better and easier to do.
 \else
   % regular IEEE prefers the singular form
   \section*{Acknowledgment}
 \fi
 
----------------------------------
 
 
 
@@ -190,6 +254,7 @@ In traditional networks, the control plane and the data plane are tightly integr
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
+\newpage
 \begin{thebibliography}{1}
 
 \bibitem{IEEEhowto:kopka} 

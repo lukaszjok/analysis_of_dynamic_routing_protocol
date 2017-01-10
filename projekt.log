@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.8)  13 DEC 2016 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.8)  10 JAN 2017 18:49
 entering extended mode
 **./projekt.tex
 (projekt.tex
@@ -390,48 +390,48 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 10
-7.
-LaTeX Font Info:    Try loading font information for U+msa on input line 107.
+8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 
 ("d:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 107.
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 
 ("d:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 108--111
+Underfull \hbox (badness 3078) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 In IP net-works, the main task of a rout-ing
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 108--111
+Underfull \hbox (badness 1571) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 to a des-ti-na-tion by hop-ping one-hop or multi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 of source/destination nodes and, suc-cess-fully
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 108--111
+Underfull \hbox (badness 1642) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 The main ob-jec-tive of rout-ing pro-to-cols is to
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 108--111
+Underfull \hbox (badness 2735) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 de-ter-mine the best path from a source to a
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 108--111
+Underfull \hbox (badness 2393) in paragraph at lines 109--112
 \OT1/ptm/m/n/10.03749 des-ti-na-tion. A rout-ing al-go-rithm uses dif-fer-ent
  []
 
@@ -439,56 +439,126 @@ Underfull \hbox (badness 2393) in paragraph at lines 108--111
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 120--122
+Underfull \hbox (badness 6658) in paragraph at lines 121--123
 \OT1/ptm/m/n/10.03749 Link state rout-ing pro-to-cols do not change
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 120--122
+Underfull \hbox (badness 4429) in paragraph at lines 121--123
 \OT1/ptm/m/n/10.03749 each rout-ing ta-bles, the in-for-ma-tion pro-vided
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 120--122
+Underfull \hbox (badness 1968) in paragraph at lines 121--123
 \OT1/ptm/m/n/10.03749 com-mu-ni-cate this in-for-ma-tion to other routers,
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 120--122
+Underfull \hbox (badness 3229) in paragraph at lines 121--123
 \OT1/ptm/m/n/10.03749 ac-cu-mu-lates in-for-ma-tion link-ages on the state
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 124--126
+Underfull \hbox (badness 3965) in paragraph at lines 125--127
 \OT1/ptm/m/n/10.03749 EIGRP, con-sid-ered a hy-brid rout-ing pro-to-col,
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 124--126
+Underfull \hbox (badness 4726) in paragraph at lines 125--127
 \OT1/ptm/m/n/10.03749 an al-go-rithm known as the dif-fu-sion up-date
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
 
  []
 
 [2]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ <images/f1.png, id=13, 831.105pt x 567.62062pt>
+File: images/f1.png Graphic file (type png)
+ <use images/f1.png>
+Package pdftex.def Info: images/f1.png used on input line 143.
+(pdftex.def)             Requested size: 505.89pt x 345.51186pt.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+
+<images/f2.png, id=14, 672.26157pt x 809.27344pt>
+File: images/f2.png Graphic file (type png)
+ <use images/f2.png>
+Package pdftex.def Info: images/f2.png used on input line 152.
+(pdftex.def)             Requested size: 505.89pt x 608.9911pt.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+<images/f3.png, id=15, 361.35pt x 216.81pt>
+File: images/f3.png Graphic file (type png)
+ <use images/f3.png>
+Package pdftex.def Info: images/f3.png used on input line 174.
+(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+
+<images/f4.png, id=16, 361.35pt x 216.81pt>
+File: images/f4.png Graphic file (type png)
+ <use images/f4.png>
+Package pdftex.def Info: images/f4.png used on input line 180.
+(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+
+<images/f5.png, id=17, 361.35pt x 216.81pt>
+File: images/f5.png Graphic file (type png)
+ <use images/f5.png>
+Package pdftex.def Info: images/f5.png used on input line 187.
+(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+
+<images/f6.png, id=18, 361.35pt x 216.81pt>
+File: images/f6.png Graphic file (type png)
+ <use images/f6.png>
+Package pdftex.def Info: images/f6.png used on input line 193.
+(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no › in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [3]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ž in font ptmr7t!
@@ -666,26 +736,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (projekt.aux)
+[4] [5 <./images/f1.png>] [6 <./images/f2.png>] [7 <./images/f3.png>] [8 <./ima
+ges/f4.png>] [9 <./images/f5.png>] [10 <./images/f6.png>] (projekt.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3400 strings out of 493335
- 49664 string characters out of 3145275
- 122131 words of memory out of 3000000
- 6890 multiletter control sequences out of 15000+200000
- 37052 words of font info for 74 fonts, out of 3000000 for 9000
+ 3435 strings out of 493335
+ 50164 string characters out of 3145275
+ 123131 words of memory out of 3000000
+ 6916 multiletter control sequences out of 15000+200000
+ 38159 words of font info for 75 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,7n,26p,1329b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
 {d:/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<d:/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb><d:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><d:/M
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><d:/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><d:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on projekt.pdf (3 pages, 76616 bytes).
+Output written on projekt.pdf (10 pages, 366606 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
