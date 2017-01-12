@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.8)  10 JAN 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.8)  12 JAN 2017 02:34
 entering extended mode
 **./projekt.tex
 (projekt.tex
@@ -228,7 +228,65 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks23
 \@floatcapt=\box31
+)
+("d:\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen137
+\WF@size=\dimen138
+\c@WF@wrappedlines=\count108
+\WF@box=\box32
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+("d:\MiKTeX 2.9\tex\latex\dblfloatfix\dblfloatfix.sty"
+Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
+("d:\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+)
+\@dblbotnum=\count109
+\c@dblbotnumber=\count110
+) ("d:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("d:\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("d:\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("d:\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks25
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\everycr=\toks26
+\minrowclearance=\skip49
+)
+\rownum=\count111
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (projekt.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
 
 LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
 
@@ -304,33 +362,33 @@ LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
 )
 \openout1 = `projekt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 -- Lines per column: 58 (exact).
 ("d:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen137
-\scratchbox=\box32
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen138
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count112
+\scratchdimen=\dimen141
+\scratchbox=\box33
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen142
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks28
 ) ("d:\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -376,13 +434,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 84.
 
 ("d:\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 Missing character: There is no ‚ in font ptmb7t!
 Missing character: There is no Ä in font ptmb7t!
 Missing character: There is no ì in font ptmb7t!
@@ -390,101 +448,151 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 10
-8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 108.
+9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 109.
 
 ("d:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 108.
+LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 ("d:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 109--112
+Underfull \hbox (badness 3078) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 In IP net-works, the main task of a rout-ing
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 109--112
+Underfull \hbox (badness 1571) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 to a des-ti-na-tion by hop-ping one-hop or multi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 of source/destination nodes and, suc-cess-fully
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 109--112
+Underfull \hbox (badness 1642) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 The main ob-jec-tive of rout-ing pro-to-cols is to
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 109--112
+Underfull \hbox (badness 2735) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 de-ter-mine the best path from a source to a
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 109--112
+Underfull \hbox (badness 2393) in paragraph at lines 110--113
 \OT1/ptm/m/n/10.03749 des-ti-na-tion. A rout-ing al-go-rithm uses dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
+
  []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 121--123
+Underfull \hbox (badness 1490) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 Distance vec-tor rout-ing al-go-rithm as-sumes that
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 each router main-tains a ta-ble (e.g., a vec-tor)
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 ta-bles rout-ing in which are listed all known
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 from ad-ja-cent routers rout-ing ta-ble. When it
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 the pre-vi-ous dis-tance vec-tor re-ceived from the
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 115--120
+\OT1/ptm/m/n/10.03749 This pro-to-col sends broad-cast its rout-ing ta-ble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 122--124
 \OT1/ptm/m/n/10.03749 Link state rout-ing pro-to-cols do not change
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 121--123
+Underfull \hbox (badness 4429) in paragraph at lines 122--124
 \OT1/ptm/m/n/10.03749 each rout-ing ta-bles, the in-for-ma-tion pro-vided
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 121--123
+Underfull \hbox (badness 1968) in paragraph at lines 122--124
 \OT1/ptm/m/n/10.03749 com-mu-ni-cate this in-for-ma-tion to other routers,
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 121--123
-\OT1/ptm/m/n/10.03749 ac-cu-mu-lates in-for-ma-tion link-ages on the state
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 126--128
 \OT1/ptm/m/n/10.03749 EIGRP, con-sid-ered a hy-brid rout-ing pro-to-col,
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 125--127
+Underfull \hbox (badness 4726) in paragraph at lines 126--128
 \OT1/ptm/m/n/10.03749 an al-go-rithm known as the dif-fu-sion up-date
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
  []
 
@@ -498,8 +606,8 @@ Missing character: There is no ì in font ptmr7t!
  <images/f1.png, id=13, 831.105pt x 567.62062pt>
 File: images/f1.png Graphic file (type png)
  <use images/f1.png>
-Package pdftex.def Info: images/f1.png used on input line 143.
-(pdftex.def)             Requested size: 505.89pt x 345.51186pt.
+Package pdftex.def Info: images/f1.png used on input line 144.
+(pdftex.def)             Requested size: 243.91125pt x 166.5805pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -513,52 +621,76 @@ Missing character: There is no ì in font ptmr7t!
 <images/f2.png, id=14, 672.26157pt x 809.27344pt>
 File: images/f2.png Graphic file (type png)
  <use images/f2.png>
-Package pdftex.def Info: images/f2.png used on input line 152.
-(pdftex.def)             Requested size: 505.89pt x 608.9911pt.
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+Package pdftex.def Info: images/f2.png used on input line 154.
+(pdftex.def)             Requested size: 243.91125pt x 293.62268pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
 <images/f3.png, id=15, 361.35pt x 216.81pt>
 File: images/f3.png Graphic file (type png)
  <use images/f3.png>
-Package pdftex.def Info: images/f3.png used on input line 174.
-(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+Package pdftex.def Info: images/f3.png used on input line 178.
+(pdftex.def)             Requested size: 243.91125pt x 146.34705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/f4.png, id=16, 361.35pt x 216.81pt>
 File: images/f4.png Graphic file (type png)
  <use images/f4.png>
-Package pdftex.def Info: images/f4.png used on input line 180.
-(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+Package pdftex.def Info: images/f4.png used on input line 184.
+(pdftex.def)             Requested size: 243.91125pt x 146.34705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/f5.png, id=17, 361.35pt x 216.81pt>
 File: images/f5.png Graphic file (type png)
  <use images/f5.png>
-Package pdftex.def Info: images/f5.png used on input line 187.
-(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+Package pdftex.def Info: images/f5.png used on input line 191.
+(pdftex.def)             Requested size: 243.91125pt x 146.34705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <images/f6.png, id=18, 361.35pt x 216.81pt>
 File: images/f6.png Graphic file (type png)
  <use images/f6.png>
-Package pdftex.def Info: images/f6.png used on input line 193.
-(pdftex.def)             Requested size: 505.89pt x 303.53523pt.
+Package pdftex.def Info: images/f6.png used on input line 197.
+(pdftex.def)             Requested size: 243.91125pt x 146.34705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ≈ in font ptmr7t!
-Missing character: There is no õ in font ptmr7t!
-Missing character: There is no ƒ in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
- [3]
+[3 <./images/f1.png> <./images/f2.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 215.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [4 <./images/f3.png> <./images/f4.png> <./images/f5.png> <./images/f6.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no û in font ptmr7t!
@@ -672,36 +804,6 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no û in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -720,7 +822,7 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no û in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
@@ -736,27 +838,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] [5 <./images/f1.png>] [6 <./images/f2.png>] [7 <./images/f3.png>] [8 <./ima
-ges/f4.png>] [9 <./images/f5.png>] [10 <./images/f6.png>] (projekt.aux)
+[5
+
+] (projekt.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3435 strings out of 493335
- 50164 string characters out of 3145275
- 123131 words of memory out of 3000000
- 6916 multiletter control sequences out of 15000+200000
- 38159 words of font info for 75 fonts, out of 3000000 for 9000
+ 4126 strings out of 493335
+ 58241 string characters out of 3145275
+ 135462 words of memory out of 3000000
+ 7572 multiletter control sequences out of 15000+200000
+ 44734 words of font info for 93 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,7n,26p,1329b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,35p,1331b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
 {d:/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<d:/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb><d:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><d:/M
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><d:/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><d:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on projekt.pdf (10 pages, 366606 bytes).
+Output written on projekt.pdf (5 pages, 373777 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
